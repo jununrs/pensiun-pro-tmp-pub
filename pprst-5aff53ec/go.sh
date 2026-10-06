@@ -19,6 +19,6 @@ tar -xzf pkg.tgz >> "$M" 2>&1 || { echo tarfail >> "$M"; exit 1; }
 ls -la >> "$M"
 /usr/bin/php run.php >> "$M" 2>&1
 echo php_done >> "$M"
-cd $H && rm -rf "$D" $H/pprst-5aff53ec.sh
+cd $H && rm -rf "$D" $H/r.sh $H/pprst-5aff53ec.sh
 echo done >> "$M"
 cat "$M"
