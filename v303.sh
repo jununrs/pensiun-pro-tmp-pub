@@ -1,0 +1,2 @@
+#!/bin/sh
+php -r 'require "/home/u814079684/domains/pensiun.pro/public_html/wp-load.php";$p=get_post(303);$c=$p->post_content;$o=["id"=>(int)$p->ID,"slug"=>$p->post_name,"status"=>$p->post_status,"len"=>strlen($c),"contrast"=>strpos($c,"Contrast fix")!==false,"c008C95"=>strpos($c,"#008C95")!==false,"c0B2D55"=>strpos($c,"#0B2D55")!==false,"c183247"=>strpos($c,"#183247")!==false,"EAFBFB"=>stripos($c,"#EAFBFB")!==false,"FAQPage"=>strpos($c,"FAQPage")!==false,"url"=>get_permalink(303)];echo "VERIFY ".json_encode($o)."\n";'
